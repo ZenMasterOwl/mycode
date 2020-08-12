@@ -20,7 +20,7 @@ def findElement(result):
         return "Air"
 answer = int(input("\nHow do you handle rejection?\n0: Rage | 1: I Freeze | 2: I just move on  "))
 func(answer)
-answer = int(input("\nWhat makes you feel at home?:\n0: Volcano | 1: Ocean | 2: Skycapes "))
+answer = int(input("\nWhat makes you feel at home?:\n0: Volcano | 1: Ocean | 2: Skyscapes "))
 func(answer)
 
 print(f"\nYour element is {findElement(result)}")
