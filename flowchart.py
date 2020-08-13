@@ -1,10 +1,4 @@
- 
-
-
-"""
-q to quit
-repeats question if wrong input entered
-"""
+#!/usr/bin/python3
 def doesWork():
     a = input("Does the dang thing work?\n").lower().strip()
     if a == "yes": 
