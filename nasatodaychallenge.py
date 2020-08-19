@@ -6,7 +6,6 @@ date = input("Welcome to nasa's apod api, please enter a day in the format YYYY-
 
 baseurl = "https://api.nasa.gov/planetary/apod?"
 hd = input("Would you like your picture to download in high definition? Enter 'y' or 'n':\n")
-apikey = "api_key=glkkNc2dENrqgUGnhDYgIey4kKIHTnSuOspAcZVs"
 if date != "":
     date = "date=" + date
     querylist.append(date)

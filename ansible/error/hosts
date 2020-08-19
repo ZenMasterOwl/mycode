@@ -2,4 +2,11 @@
 bender      ansible_host=10.10.2.3 ansible_ssh_user=bender
 fry         ansible_host=10.10.2.4 ansible_ssh_user=fry
 zoidberg    ansible_host=10.10.2.5 ansible_ssh_user=zoidberg
+[futurama]
+bender ansible_host=10.10.2.3 ansible_user=bender
+fry ansible_host=10.10.2.4 ansible_user=fry
+farnsworth ansible_host=10.10.2.6 ansible_user=farnsworth
+
+[futurama:vars]
+ansible_become_pass=alta3
 
