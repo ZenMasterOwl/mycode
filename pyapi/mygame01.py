@@ -83,7 +83,7 @@ while True:
         # check that they are allowed wherever they want to go
         if move[1] in rooms[currentRoom]:
             # if dog in inventory, protect from monster
-            if 'dog' in inventory and 'monster' in rooms[rooms[currentRoom][move[1]]]['item']:
+            if 'dog' in inventory and 'item' in rooms[rooms[currentRoom][move[1]]] and 'monster' in rooms[rooms[currentRoom][move[1]]]['item']:
                 print("Your follower barks ferociously in that direction.")
             else:
                 # set the current room to the new room
@@ -103,7 +103,7 @@ while True:
                 print("The dog decides to follow you.")
             print(move[1] + ' got!')
             # delete the item from the room
-            del rooms[currentRoom]['item']
+            rooms[currentRoom]['item'].remove(move[1])
         # otherwise, if the item isn't there to get
         else:
             # tell them they can't get it
